@@ -41,9 +41,9 @@ for i in range(1, 13):  # Loop from 1 to 12
 
 
 #Below are the resouses used for this Task:
-    #| Step | Code                                                     | Explanation                        |
-    #| ---- | -------------------------------------------------------- | ---------------------------------- |
-    #| 1    | `movies = ["Inception", "The Matrix", "Interstellar"]`   | Start with favorite movies         |
-    #| 2    | `movies.append(new_movie)`                               | Add a movie entered by the user    |
-    #| 3    | `if remove_movie in movies: movies.remove(remove_movie)` | Remove a movie safely              |
-    #| 4    | `movies.sort()`                                          | Sort the final list alphabetically |
+    #| Step | Code                                   | Explanation                  |
+    #| ---- | -------------------------------------- | ---------------------------- |
+    #| 1    | `num = int(input("Enter a number: "))` | Ask the user for a number    |
+    #| 2    | `for i in range(1, 13):`               | Loop through numbers 1 to 12 |
+    #| 3    | `print(f"{num} x {i} = {num * i}")`    | Print multiplication result  |
+
