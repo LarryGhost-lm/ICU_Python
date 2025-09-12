@@ -17,36 +17,27 @@ Created on Fri Sep 12 20:03:03 2025
 
 #SIN: 2502100895
 
-#TASK:Lab Exercise 3,Program to Manage Favorite Movies
+#TASK:Lab Exercise 3,Multiplication Table Program
 
 
 
-#EXERCISE:Write a program that:
-# 1. Creates a list of your favorite movies.
-# 2. Lets the user add a new movie.
-# 3. Lets the user remove a movie.
-# 4. Prints the final sorted list.
+#EXERCISE:
+# Write a program that asks the userfor a number and prints its multiplication table up to 12.
 
 
 
 
-# Step 1: Create a list of favorite movies
-movies = ["3 idiots", "The Gladiator", "Interstellar"]
+# Ask the user for a number
+#Get user input → input() reads a number as a string, int() converts it into an integer.
+num = int(input("Enter a number: "))
 
-# Step 2: Let the user add a new movie
-new_movie = input("Enter a movie to add to the list: ")
-movies.append(new_movie)
+# Print multiplication table up to 12
+#Loop from 1 to 12 → for i in range(1, 13) generates numbers 1 through 12.
+#Print formatted result → f"{num} x {i} = {num * i}" displays the multiplication in a clean format.
+print(f"\nMultiplication Table for {num}:")
+for i in range(1, 13):  # Loop from 1 to 12
+    print(f"{num} x {i} = {num * i}")
 
-# Step 3: Let the user remove a movie
-remove_movie = input("Enter a movie to remove from the list: ")
-if remove_movie in movies:
-    movies.remove(remove_movie)
-else:
-    print(remove_movie, "is not in the list.")
-
-# Step 4: Print the final sorted list
-movies.sort()
-print("Here is your final movie list:", movies)
 
 
 #Below are the resouses used for this Task:
